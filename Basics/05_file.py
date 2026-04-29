@@ -1,0 +1,10 @@
+import os
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_dir, 'myfile.txt')
+f = open(file_path, 'r')
+print(f.read())
+fw = open(file_path, 'w')
+fw.write('Hello, World!\n')
+fw.write('Hello, Python!\n')
+f.close()
+fw.close()
