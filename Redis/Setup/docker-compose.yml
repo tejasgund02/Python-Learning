@@ -8,8 +8,7 @@ services:
     volumes:
       - redis-data:/data
     
-   
-   mongodb:
+  mongodb:
     image: mongo:latest
     container_name: chai-mongodb
     ports:
